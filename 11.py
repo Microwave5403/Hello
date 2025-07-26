@@ -25,7 +25,6 @@ for column in columns:
     if test[column].count() >1350 and test[column].count() < test.shape[0]:
         drop_columns.append(column)
 
-
 train.dropna(subset=drop_columns, inplace=True)
 #test.dropna(subset=drop_columns, inplace=True)
 # 相反，对测试集中的缺失值进行填充
